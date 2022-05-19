@@ -1,5 +1,6 @@
 package org.qiyu.config;
 
+import cn.hutool.core.util.BooleanUtil;
 import com.google.common.base.Splitter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,6 +22,7 @@ public final class QiyuConfig {
   private static String appKey;
   private static String appSecret;
   private static String staffIdInclude;
+  private static Boolean includeEnabled;
 
   static {
 
@@ -35,6 +37,8 @@ public final class QiyuConfig {
       appKey = properties.getProperty("qiyu.appkey");
       appSecret = properties.getProperty("qiyu.appsecret");
       staffIdInclude = properties.getProperty("qiyu.staffid.include");
+      includeEnabled = BooleanUtil
+          .toBoolean(properties.getProperty("qiyu.staffid.include.enabled"));
 
     } catch (IOException e) {
       log.error("qiyu.properties Initialization failure", e);
@@ -54,6 +58,10 @@ public final class QiyuConfig {
 
   public static List<String> getStaffIdInclude() {
     return Splitter.on(",").omitEmptyStrings().trimResults().splitToList(staffIdInclude);
+  }
+
+  public static boolean getIncludeEnabled() {
+    return includeEnabled;
   }
 
 }

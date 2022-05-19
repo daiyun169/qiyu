@@ -403,11 +403,14 @@ public class SessionHistoryService {
 
       // 字段转换
       Map<String, String> rowMap = createRowMap(map);
-
-      // 过滤客服ID
-      String staffId = rowMap.get("staffId");
-      List<String> staffIdInclude = QiyuConfig.getStaffIdInclude();
-      if (staffIdInclude.contains(staffId)) {
+      if (QiyuConfig.getIncludeEnabled()) {
+        // 过滤客服ID
+        String staffId = rowMap.get("staffId");
+        List<String> staffIdInclude = QiyuConfig.getStaffIdInclude();
+        if (staffIdInclude.contains(staffId)) {
+          rows.add(rowMap);
+        }
+      } else {
         rows.add(rowMap);
       }
     }

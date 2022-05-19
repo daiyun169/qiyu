@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b0f0116-36d5-468e-8527-d254ee99a1a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/qiyu/domain/BaseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/qiyu/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/qiyu/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/qiyu/config/QiyuConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/qiyu/config/QiyuConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/qiyu.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qiyu.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,6 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/AppStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/qiyu.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -88,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/util/AppStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/constants/ApiConstant.java" />
         <option value="$PROJECT_DIR$/download/readme.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/domain/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/domain/BaseResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/AppStart.java" />
@@ -96,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/config/QiyuConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/qiyu.properties" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -135,68 +151,6 @@
             <path>
               <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
               <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qiyu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qiyu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,25 +232,25 @@
       <updated>1652869563562</updated>
       <workItem from="1652869564913" duration="4129000" />
       <workItem from="1652924248616" duration="1878000" />
-      <workItem from="1652928857741" duration="9271000" />
+      <workItem from="1652928857741" duration="9336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15278000" />
+    <option name="totallyTimeSpent" value="15343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,13 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/domain/BaseResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -451,10 +398,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="405" lean-forward="true" selection-start-line="405" selection-end-line="405" />
+          <folding>
+            <element signature="e#5673#5674#0" expanded="true" />
+            <element signature="e#5732#5733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/AppStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="285">
+          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -473,21 +431,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/qiyu/service/SessionHistoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="405" lean-forward="true" selection-start-line="405" selection-end-line="405" />
-          <folding>
-            <element signature="e#5673#5674#0" expanded="true" />
-            <element signature="e#5732#5733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/qiyu.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>

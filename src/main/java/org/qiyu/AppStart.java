@@ -1,7 +1,5 @@
 package org.qiyu;
 
-import cn.hutool.core.date.DatePattern;
-import cn.hutool.core.date.DateUtil;
 import java.io.IOException;
 import org.qiyu.service.SessionHistoryService;
 
@@ -28,19 +26,13 @@ public class AppStart {
     // 请填写开始时间
     String start = "2022-05-01 00:00:00";
     // 请填写结束时间
-    String end = "2022-05-03 00:00:00";
+    String end = "2022-05-01 12:00:00";
 
     // 下载客户端
     SessionHistoryService sessionHistoryService = new SessionHistoryService();
-    sessionHistoryService.downloadSession(formatTime(start), formatTime(end));
+    sessionHistoryService.downloadSession(start, end);
 
   }
 
-  /**
-   * yyyy-MM-dd HH:mm:ss
-   */
-  public static long formatTime(String time) {
-    return DateUtil.parse(time, DatePattern.NORM_DATETIME_PATTERN).getTime();
-  }
 
 }

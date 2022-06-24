@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.io.file.PathUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.StrUtil;
@@ -18,6 +19,7 @@ import com.google.gson.LongSerializationPolicy;
 import com.google.gson.reflect.TypeToken;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -60,7 +62,7 @@ public class SessionHistoryService {
   /**
    * 下载会话记录
    */
-  public void downloadSession(String start, String end) throws IOException {
+  public void downloadSession(String start, String end, int signCount) throws IOException {
 
     BaseResult baseResult = addDownloadSessionTask(formatTime(start), formatTime(end));
 
@@ -111,10 +113,14 @@ public class SessionHistoryService {
     String messagePath =
         unzipPath + File.separator + FILE_DIR_NAME + File.separator + "message.txt";
 
-    String messageDest = getDestFile("message_convert.xlsx");
+    String messageDest = getDestFile(StrUtil.format("message_convert_{}.xlsx", signCount));
 
     // 将 message.txt 转换成 message_convert.xlsx
     convertToExcel(messagePath, messageDest);
+
+    // 删除 session_package.zip、删除 unzip 文件夹
+    FileUtil.del(destFile);
+    FileUtil.del(unzipPath);
 
   }
 
@@ -375,7 +381,7 @@ public class SessionHistoryService {
    * yyyy-MM-dd HH:mm:ss
    */
   private long formatTime(String time) {
-    return DateUtil.parse(time, DatePattern.NORM_DATETIME_PATTERN).getTime();
+    return DateUtil.parse(time, DatePattern.NORM_DATETIME_MS_PATTERN).getTime();
   }
 
   /**
@@ -426,10 +432,10 @@ public class SessionHistoryService {
 //    log.info("文件解压完成：{}", "");
 //  }
 
-  public static void main(String[] args) {
-    FileUtil
-        .readLines(new File("/Users/xianyu/mycp-workspace/qiyu/download/unzip/5284272/message.txt"),
-            "utf8");
-  }
+//  public static void main(String[] args) {
+//    FileUtil
+//        .readLines(new File("/Users/xianyu/mycp-workspace/qiyu/download/unzip/5284272/message.txt"),
+//            "utf8");
+//  }
 
 }
